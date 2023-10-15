@@ -1,7 +1,5 @@
-// video.controller.ts
-
-import { Controller, Post, Body } from '@nestjs/common';
-import  AWS  from 'aws-sdk';
+import { Controller, Get, Render, Post, Body } from '@nestjs/common';
+import AWS from 'aws-sdk';
 
 @Controller('video')
 export class VideoController {
