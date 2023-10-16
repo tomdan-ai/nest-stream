@@ -1,4 +1,4 @@
-import { Controller, Get, Render, Post, Body } from '@nestjs/common';
+import { Controller, Post, Body } from '@nestjs/common';
 import AWS from 'aws-sdk';
 
 @Controller('video')
