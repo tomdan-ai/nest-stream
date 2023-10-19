@@ -5,7 +5,7 @@ import { NestExpressApplication } from '@nestjs/platform-express';
 async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
 
-  // Set up Handlebars as the view engine
+
   app.useStaticAssets('public');
   app.setBaseViewsDir('views');
   app.setViewEngine('hbs');
