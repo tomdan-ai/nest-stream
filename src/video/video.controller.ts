@@ -14,8 +14,8 @@ export class VideoController {
     try {
       const params = {
         StreamName: 'your-kinesis-stream-name',
-        Data: JSON.stringify(videoData), // You can send video data as a JSON object
-        PartitionKey: '1', // You can change this key based on your use case
+        Data: JSON.stringify(videoData), 
+        PartitionKey: '1', 
       };
 
       const result = await this.sendVideoToKinesis(params);
